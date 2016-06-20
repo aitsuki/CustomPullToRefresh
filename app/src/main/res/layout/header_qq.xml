@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#303030"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        tools:text="下拉刷新"
+        />
+    <View
+        android:id="@+id/successIcon"
+        android:visibility="invisible"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/enm"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/text"
+        tools:ignore="RtlHardcoded" />
+    
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/era"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/loadingIcon"
+        android:layout_width="35dp"
+        android:layout_height="15dp"
+        android:src="@drawable/gpt"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        />
+
+</RelativeLayout>
